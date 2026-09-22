@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kronos — Gestor de tareas y horarios inteligentes</title>
+  <meta name="description" content="Kronos organiza tu horario, prioriza tus tareas y te recuerda lo importante. El gestor de tareas que entiende tu tiempo. Descarga la APK gratis.">
+  <meta name="theme-color" content="#070812">
+  <meta property="og:title" content="Kronos — Tu tiempo, bajo control">
+  <meta property="og:description" content="Calendario inteligente, recordatorios adaptativos y priorización automática en una sola app. Descarga la APK gratis.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Kronos, ir al inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="34" height="34">
+            <defs>
+              <linearGradient id="brand-grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#7c5cff"/>
+                <stop offset="1" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="16" fill="url(#brand-grad)"/>
+            <circle cx="32" cy="32" r="17" fill="none" stroke="#fff" stroke-width="4"/>
+            <path d="M32 22v10.5l7 4.5" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">Kronos</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#funciones">Funciones</a></li>
+          <li><a class="nav__link" href="#como-funciona">Cómo funciona</a></li>
+          <li><a class="nav__link" href="#opiniones">Opiniones</a></li>
+          <li><a class="nav__link" href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="assets/app.apk" download>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Descargar APK
+        </a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="blob blob--3"></span>
+        <span class="hero__grid"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <span class="badge">
+            <span class="badge__dot" aria-hidden="true"></span>
+            Nuevo · Kronos 2.0 ya está aquí
+          </span>
+          <h1 class="hero__title">
+            Organiza tu horario.<br>
+            <span class="grad">Domina tus tareas.</span>
+          </h1>
+          <p class="lead">
+            Kronos combina calendario inteligente, recordatorios adaptativos y priorización
+            automática para que nunca vuelvas a perder una entrega, una reunión o una idea.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="assets/app.apk" download>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Descargar APK
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#funciones">
+              Ver funciones
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <ul class="hero__meta">
+            <li>Android 8.0+</li>
+            <li>12 MB</li>
+            <li>Gratis, sin anuncios</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="120">
+          <div class="phone">
+            <div class="phone__frame">
+              <span class="phone__notch" aria-hidden="true"></span>
+              <div class="phone__screen">
+                <div class="app" aria-hidden="true">
+                  <div class="app__status">
+                    <span>9:41</span>
+                    <span class="app__status-icons"><i></i><i></i><i></i></span>
+                  </div>
+                  <div class="app__header">
+                    <div>
+                      <p class="app__eyebrow">Lunes, 22 sep</p>
+                      <p class="app__title">Tu día</p>
+                    </div>
+                    <span class="app__avatar">E</span>
+                  </div>
+                  <div class="app__progress">
+                    <div class="app__progress-top"><span>Progreso del día</span><strong>68%</strong></div>
+                    <div class="app__bar"><span></span></div>
+                  </div>
+                  <ul class="app__tasks">
+                    <li class="app__task is-done">
+                      <span class="app__check">
+                        <svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </span>
+                      <span class="app__task-text">Reunión de equipo</span>
+                      <span class="app__time">09:00</span>
+                    </li>
+                    <li class="app__task is-active">
+                      <span class="app__check"></span>
+                      <span class="app__task-text">Diseñar onboarding</span>
+                      <span class="app__time">11:30</span>
+                    </li>
+                    <li class="app__task">
+                      <span class="app__check"></span>
+                      <span class="app__task-text">Revisar métricas</span>
+                      <span class="app__time">15:00</span>
+                    </li>
+                    <li class="app__task">
+                      <span class="app__check"></span>
+                      <span class="app__task-text">Entrenar</span>
+                      <span class="app__time">18:30</span>
+                    </li>
+                  </ul>
+                  <div class="app__nav">
+                    <span class="is-on"></span><span></span><span></span><span></span>
+                  </div>
+                  <span class="app__fab">+</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card float-card--1" aria-hidden="true">
+              <span class="float-card__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              </span>
+              <div>
+                <strong>Bloque libre</strong>
+                <small>Hoy · 16:00 – 17:30</small>
+              </div>
+            </div>
+
+            <div class="float-card float-card--2" aria-hidden="true">
+              <span class="float-card__icon float-card__icon--green">
+                <svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>3 tareas listas</strong>
+                <small>Racha de 7 días 🔥</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Integraciones ===== -->
+    <section class="integrations" aria-label="Integraciones disponibles">
+      <p class="integrations__label">Se integra con tus herramientas favoritas</p>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>Google Calendar</span><span>Outlook</span><span>Notion</span><span>Slack</span>
+          <span>Trello</span><span>Zoom</span><span>Drive</span><span>GitHub</span>
+          <span aria-hidden="true">Google Calendar</span><span aria-hidden="true">Outlook</span><span aria-hidden="true">Notion</span><span aria-hidden="true">Slack</span>
+          <span aria-hidden="true">Trello</span><span aria-hidden="true">Zoom</span><span aria-hidden="true">Drive</span><span aria-hidden="true">GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Métricas ===== -->
+    <section class="stats" aria-label="Cifras de Kronos">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num"><span data-count="50" data-decimals="0">0</span>K+</span>
+          <p>Descargas en todo el mundo</p>
+        </div>
+        <div class="stat reveal" data-delay="80">
+          <span class="stat__num"><span data-count="1.2" data-decimals="1">0</span>M</span>
+          <p>Tareas completadas</p>
+        </div>
+        <div class="stat reveal" data-delay="160">
+          <span class="stat__num"><span data-count="4.8" data-decimals="1">0</span>★</span>
+          <p>Valoración media en tiendas</p>
+        </div>
+        <div class="stat reveal" data-delay="240">
+          <span class="stat__num"><span data-count="8" data-decimals="0">0</span>h</span>
+          <p>Ahorradas al mes de media</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Funciones ===== -->
+    <section class="section" id="funciones">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Funciones</span>
+          <h2 class="section__title">Todo lo que necesitas para <span class="grad">no volver a improvisar</span></h2>
+          <p class="section__lead">Kronos no es otra lista de tareas: es un motor que planifica tu semana por ti y se adapta cuando la vida cambia.</p>
+        </header>
+
+        <div class="features">
+          <article class="card reveal">
+            <span class="card__icon card__icon--violet">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 3v4M16 3v4M3 10h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 13v3l2 1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Horarios inteligentes</h3>
+            <p>Detecta tus bloques libres reales y agenda cada tarea donde de verdad cabe, sin choques ni huecos muertos.</p>
+          </article>
+
+          <article class="card reveal" data-delay="60">
+            <span class="card__icon card__icon--cyan">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 1 0-12 0c0 6-2 7-2 7h16s-2-1-2-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 20a2 2 0 0 0 3 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Recordatorios que sí funcionan</h3>
+            <p>Notificaciones adaptativas según urgencia, ubicación y tus hábitos. Avisan cuando importa, no cuando estorbas.</p>
+          </article>
+
+          <article class="card reveal" data-delay="120">
+            <span class="card__icon card__icon--pink">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M4 12h16M4 17h7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <h3>Priorización automática</h3>
+            <p>El motor de Kronos ordena tu día por impacto, fecha límite y energía disponible. Lo urgente primero, lo importante siempre.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon card__icon--green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Sincronización total</h3>
+            <p>Google Calendar, Outlook y todos tus dispositivos en tiempo real. Funciona sin conexión y sincroniza al volver.</p>
+          </article>
+
+          <article class="card reveal" data-delay="60">
+            <span class="card__icon card__icon--amber">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 20a6 6 0 0 1 12 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 5.5a3.5 3.5 0 0 1 0 7M21 20a6 6 0 0 0-4-5.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Colaboración en equipo</h3>
+            <p>Comparte tableros, asigna tareas y mira el avance en vivo. Menos reuniones, más resultados.</p>
+          </article>
+
+          <article class="card reveal" data-delay="120">
+            <span class="card__icon card__icon--blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Estadísticas de productividad</h3>
+            <p>Descubre en qué se va tu tiempo, qué días rindes más y cómo mejorar cada semana con informes claros.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cómo funciona ===== -->
+    <section class="section section--alt" id="como-funciona">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2 class="section__title">Listo en <span class="grad">menos de 2 minutos</span></h2>
+          <p class="section__lead">Sin configuraciones eternas ni tutoriales interminables. Descarga, conecta y deja que Kronos haga el resto.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Descarga e inicia sesión</h3>
+            <p>Instala la APK y crea tu cuenta en segundos con Google o correo. Sin tarjetas, sin letra pequeña.</p>
+          </li>
+          <li class="step reveal" data-delay="100">
+            <span class="step__num">2</span>
+            <h3>Conecta tu calendario</h3>
+            <p>Importa tus eventos y define tus horarios de trabajo, estudio o descanso. Kronos aprende tu ritmo.</p>
+          </li>
+          <li class="step reveal" data-delay="200">
+            <span class="step__num">3</span>
+            <h3>Recibe tu plan diario</h3>
+            <p>Cada mañana tendrás un plan optimizado, con recordatorios y ajustes automáticos cuando algo cambie.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Showcase ===== -->
+    <section class="section" id="producto">
+      <div class="container showcase">
+        <div class="showcase__visual reveal">
+          <div class="planner" aria-hidden="true">
+            <div class="planner__top">
+              <span class="planner__dot planner__dot--red"></span>
+              <span class="planner__dot planner__dot--amber"></span>
+              <span class="planner__dot planner__dot--green"></span>
+              <span class="planner__title">Semana 39 · Kronos</span>
+            </div>
+            <div class="planner__days">
+              <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span>
+            </div>
+            <div class="planner__grid">
+              <span class="block block--violet" style="--col:1; --row:1 / span 2;">Diseño</span>
+              <span class="block block--cyan" style="--col:2; --row:2 / span 2;">Reunión</span>
+              <span class="block block--pink" style="--col:3; --row:1 / span 3;">Sprint</span>
+              <span class="block block--green" style="--col:4; --row:3 / span 2;">Enfoque</span>
+              <span class="block block--amber" style="--col:5; --row:2 / span 2;">Revisión</span>
+              <span class="block block--blue" style="--col:1; --row:4 / span 2;">Curso</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase__copy reveal" data-delay="120">
+          <span class="eyebrow">Planificación real</span>
+          <h2 class="section__title">Tu semana, planificada <span class="grad">antes de empezarla</span></h2>
+          <p class="section__lead">Arrastra una tarea y Kronos reordena todo lo demás: huecos, recordatorios y prioridades.</p>
+          <ul class="checklist">
+            <li>Planificación automática de tu semana en un toque</li>
+            <li>Alertas inteligentes antes de cada fecha límite</li>
+            <li>Modo enfoque con temporizador Pomodoro integrado</li>
+            <li>Widgets para tu pantalla de inicio</li>
+            <li>Funciona offline y sincroniza después</li>
+          </ul>
+          <a class="btn btn--primary" href="assets/app.apk" download>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Descargar APK
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Opiniones ===== -->
+    <section class="section section--alt" id="opiniones">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Opiniones</span>
+          <h2 class="section__title">Miles de personas ya <span class="grad">recuperaron su tiempo</span></h2>
+        </header>
+
+        <div class="testimonials">
+          <figure class="testimonial reveal">
+            <div class="testimonial__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Kronos cambió mi forma de trabajar. Pasé del caos total a tener semanas planificadas en minutos, sin pensar.”</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">LM</span>
+              <span><strong>Laura Méndez</strong><small>Project Manager</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal" data-delay="100">
+            <div class="testimonial__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Por fin una app que entiende que no todas las tareas valen lo mismo. La priorización automática es oro puro.”</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">AR</span>
+              <span><strong>Andrés Rojas</strong><small>Desarrollador freelance</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal" data-delay="200">
+            <div class="testimonial__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Uso Kronos para coordinar a mi equipo y mis estudios a la vez. Nunca había sido tan fácil cumplir todo.”</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">CT</span>
+              <span><strong>Camila Torres</strong><small>Estudiante de ingeniería</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2 class="section__title">¿Tienes dudas? <span class="grad">Aquí las respuestas</span></h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>¿Kronos es gratis?</summary>
+            <p>Sí. La descarga y el plan básico son gratuitos y sin anuncios. El plan Pro añade colaboración avanzada, informes detallados y automatizaciones ilimitadas.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿En qué dispositivos funciona?</summary>
+            <p>Hoy está disponible para Android 8.0 o superior mediante la APK oficial. La versión para iOS y la app web están en camino.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Necesito conexión a internet?</summary>
+            <p>No. Kronos funciona completamente offline: puedes crear tareas, mover horarios y marcar progreso. Al recuperar conexión, todo se sincroniza solo.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Se sincroniza con Google Calendar y Outlook?</summary>
+            <p>Sí, en ambos sentidos. Los eventos que crees en Kronos aparecen en tu calendario y viceversa, sin duplicados ni retrasos.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Puedo usarlo con mi equipo de trabajo?</summary>
+            <p>Claro. Comparte tableros, asigna tareas y comenta en tiempo real. Ideal para equipos pequeños y proyectos colaborativos.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>¿Cómo instalo la APK en mi teléfono?</summary>
+            <p>Pulsa “Descargar APK”, abre el archivo desde tus descargas y permite la instalación desde orígenes desconocidos cuando el sistema lo solicite. Es un proceso de 30 segundos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA final ===== -->
+    <section class="cta" id="descargar">
+      <div class="cta__bg" aria-hidden="true"><span class="blob blob--4"></span></div>
+      <div class="container cta__inner reveal">
+        <h2>Empieza hoy a recuperar tu tiempo</h2>
+        <p>Únete a las más de 50.000 personas que ya organizan su día con Kronos. Descarga gratis y ten tu primera semana planificada en minutos.</p>
+        <a class="btn btn--primary btn--xl" href="assets/app.apk" download>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Descargar APK
+        </a>
+        <p class="cta__note">Android 8.0+ · 12 MB · Gratis, sin anuncios</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#inicio" aria-label="Kronos, ir al inicio">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="30" height="30">
+              <defs>
+                <linearGradient id="brand-grad-footer" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#7c5cff"/>
+                  <stop offset="1" stop-color="#22d3ee"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#brand-grad-footer)"/>
+              <circle cx="32" cy="32" r="17" fill="none" stroke="#fff" stroke-width="4"/>
+              <path d="M32 22v10.5l7 4.5" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand__name">Kronos</span>
+        </a>
+        <p>El gestor de tareas y horarios que entiende tu tiempo. Planifica menos, haz más.</p>
+        <ul class="social" aria-label="Redes sociales">
+          <li><a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l7.2 9.3L4.4 20h2.4l5.6-5.5L16.8 20H20l-7.5-9.7L18.9 4h-2.4l-4.9 4.9L7.2 4H4z" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .3.3.7 1 .7 2v3c0 .3.2.6.7.5A10 10 0 0 0 12 2z" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 9.5l4 2.5-4 2.5v-5z" fill="currentColor"/></svg></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer__col" aria-label="Producto">
+        <h3>Producto</h3>
+        <ul>
+          <li><a href="#funciones">Funciones</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="assets/app.apk" download>Descargar APK</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Recursos">
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Blog de productividad</a></li>
+          <li><a href="#">Novedades</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Legal">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Licencias</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Kronos. Todos los derechos reservados.</p>
+      <p class="footer__made">Hecho para quienes valoran su tiempo.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
